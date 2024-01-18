@@ -63,7 +63,7 @@ export const Badge = (props: Props) => {
         style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
       >
         <span>
-          <img style={{ height: '17px', width: '100px',position: 'absolute', top: '14px', right: '61px'}} src={logo} />
+          <img style={{ height: '17px', width: '100px', position: 'absolute', top: '14px', right: '61px' }} src={logo} />
         </span>
       </a>
     </span>
