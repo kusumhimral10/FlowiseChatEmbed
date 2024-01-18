@@ -1,4 +1,8 @@
 import { onCleanup, onMount } from 'solid-js';
+// import logos from '../../../assets/index.css';
+import logo from '../assets/images/FloWiseAI.png';
+
+
 
 type Props = {
   botContainer: HTMLDivElement | undefined;
@@ -53,14 +57,16 @@ export const Badge = (props: Props) => {
       Powered by
       <a
         ref={liteBadge}
-        href={'https://flowiseai.com'}
+        href={'https://maslow.ai'}
         target="_blank"
         rel="noopener noreferrer"
         class="lite-badge"
         id="lite-badge"
         style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
       >
-        <span> Kusum</span>
+        <span><img 
+        style={{ height: 'auto', width: '150' }}
+        src={logo} /></span>
       </a>
     </span>
   );
