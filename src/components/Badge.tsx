@@ -2,8 +2,6 @@ import { onCleanup, onMount } from 'solid-js';
 // import logos from '../../../assets/index.css';
 import logo from '../assets/images/FloWiseAI.png';
 
-
-
 type Props = {
   botContainer: HTMLDivElement | undefined;
   poweredByTextColor?: string;
@@ -64,9 +62,9 @@ export const Badge = (props: Props) => {
         id="lite-badge"
         style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
       >
-        <span><img 
-        style={{ height: 'auto', width: '150' }}
-        src={logo} /></span>
+        <span>
+          <img style={{ height: 'auto', width: '150' }} src={logo} />
+        </span>
       </a>
     </span>
   );
