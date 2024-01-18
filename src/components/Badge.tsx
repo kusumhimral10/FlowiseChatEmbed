@@ -1,6 +1,6 @@
 import { onCleanup, onMount } from 'solid-js';
 // import logos from '../../../assets/index.css';
-import logo from '../assets/images/FloWiseAI.png';
+import logo from '../assets/images/Maslow_Complete_Logo_Black.png';
 
 type Props = {
   botContainer: HTMLDivElement | undefined;
@@ -63,7 +63,7 @@ export const Badge = (props: Props) => {
         style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
       >
         <span>
-          <img style={{ height: 'auto', width: '150' }} src={logo} />
+          <img style={{ height: '17px', width: '100px',position: 'absolute', top: '14px', right: '61px'}} src={logo} />
         </span>
       </a>
     </span>
